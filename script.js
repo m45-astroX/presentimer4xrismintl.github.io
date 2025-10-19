@@ -148,7 +148,7 @@ const countDown = () => {
 };
 
 const startTimer = () => {
-  statusLbl.innerText = "Remaining time";
+  statusLbl.innerText = "Time Remaining";
   startBtn.disabled = true;
   stopBtn.disabled = false;
   resetBtn.disabled = true;
@@ -180,7 +180,7 @@ const stopTimer = () => {
 
 const resetTimer = () => {
   setupTimer();
-  statusLbl.innerText = "Remaining time";
+  statusLbl.innerText = "Time Remaining";
   resetBtn.disabled = true;
 
   // ラップタイムの初期化，およびラップタイムリストの配列，DOMリストを削除
