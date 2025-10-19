@@ -148,7 +148,7 @@ const countDown = () => {
 };
 
 const startTimer = () => {
-  statusLbl.innerText = "Remainning time";
+  statusLbl.innerText = "Remaining time";
   startBtn.disabled = true;
   stopBtn.disabled = false;
   resetBtn.disabled = true;
