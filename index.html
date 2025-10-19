@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="プレゼン,学会発表,タイマー,ベル,予鈴" />
+    <meta name="author" content="kyome22, tkkrr" />
+    <meta name="description" content="研究発表用のシンプルなタイマー" />
+    <meta property="og:url" content="https://presentimer.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="プレゼンタイマー" />
+    <meta property="og:site_name" content="プレゼンタイマー" />
+    <meta property="og:description" content="研究発表用のシンプルなタイマー" />
+    <meta property="og:image" content="https://presentimer.github.io/images/og-thumbnail.png" />
+    <title>プレゼンタイマー</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="analytics.js"></script>
+    <script type="text/javascript" src="./script.js" defer></script>
+  </head>
+  <body>
+    <section id="main">
+      <div class="inner">
+        <p id="status">Remaining Time</p>
+        <p id="timer"><span id="minutes">00</span>m <span id="seconds">00</span>s</p>
+        <p id="elapsed_timer">
+          Elapsed Time
+          <span id="elapsed_minutes">00</span>m <span id="elapsed_seconds">00</span>s
+        </p>
+      </div>
+    </section>
+    <section id="controller">
+      <button id="start">Start</button>
+      &emsp;
+      <button id="stop">Stop</button>
+      &emsp;
+      <button id="reset">Reset</button>
+      &emsp;
+      <button id="bell">Bell</button>
+      <table>
+        <tr>
+          <td>Talk time</td>
+          <td class="limit">
+            <input type="tel" maxlength="3" placeholder="0" id="limitField" />m
+          </td>
+        </tr>
+        <tr>
+          <td>1st bell</td>
+          <td>
+            <input type="tel" maxlength="3" placeholder="0" id="minutesPass1" name="1" />minutes elapsed
+          </td>
+          <td>or</td>
+          <td>Minutes Remaining<input type="tel" maxlength="3" placeholder="0" id="minutesRest1" />min</td>
+        </tr>
+        <tr>
+          <td>2nd bell</td>
+          <td>
+            <input type="tel" maxlength="3" placeholder="0" id="minutesPass2" name="2" />minutes elapsed
+          </td>
+          <td>or</td>
+          <td>Minutes Remaining<input type="tel" maxlength="3" placeholder="0" id="minutesRest2" />min</td>
+        </tr>
+        <tr>
+          <td>3rd bell</td>
+          <td>
+            <input type="tel" maxlength="3" placeholder="0" id="minutesPass3" name="3" />minutes elapsed
+          </td>
+          <td>or</td>
+          <td>Minutes Remaining<input type="tel" maxlength="3" placeholder="0" id="minutesRest3" />min</td>
+        </tr>
+      </table>
+    </section>
+    <section id="wrapWrapper">
+      <h1>Lap time</h1>
+      <ol id="wrapList"></ol>
+      <button id="wrap">Lap</button>
+    </section>
+    <section id="githubLinkWrapper">
+      <a href="https://github.com/presentimer/presentimer.github.io" target="_blank">
+        <img src="images/github-mark-white.svg" id="githubMarkSVG" />
+      </a>
+    </section>
+    <footer>
+      <p class="copyright">©︎ 2019-2024 kyome22, tkkrr</p>
+      <p class="copyright">©︎ 2025 Yuma Aoki (Kindai Univ.)</p>
+    </footer>
+  </body>
+</html>
