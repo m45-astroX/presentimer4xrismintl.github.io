@@ -166,7 +166,7 @@ const startTimer = () => {
 const stopTimer = () => {
   clearInterval(timer);
   passBackup = passTime;
-  statusLbl.innerText = "Stopping";
+  statusLbl.innerText = "Paused";
   stopBtn.disabled = true;
   startBtn.disabled = false;
   resetBtn.disabled = false;
