@@ -148,7 +148,7 @@ const countDown = () => {
 };
 
 const startTimer = () => {
-  statusLbl.innerText = "残り";
+  statusLbl.innerText = "Remainning time";
   startBtn.disabled = true;
   stopBtn.disabled = false;
   resetBtn.disabled = true;
@@ -166,7 +166,7 @@ const startTimer = () => {
 const stopTimer = () => {
   clearInterval(timer);
   passBackup = passTime;
-  statusLbl.innerText = "停止中";
+  statusLbl.innerText = "Stopping";
   stopBtn.disabled = true;
   startBtn.disabled = false;
   resetBtn.disabled = false;
@@ -180,7 +180,7 @@ const stopTimer = () => {
 
 const resetTimer = () => {
   setupTimer();
-  statusLbl.innerText = "残り";
+  statusLbl.innerText = "Remaining time";
   resetBtn.disabled = true;
 
   // ラップタイムの初期化，およびラップタイムリストの配列，DOMリストを削除
