@@ -30,7 +30,7 @@ p#status {
 
 p#timer {
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 330px;
 }
 
 p#elapsed_timer {
@@ -40,7 +40,8 @@ p#elapsed_timer {
 
 span#minutes,
 span#seconds {
-  font-size: 220px;
+  font-size: 300px;
+  font-weight: bold;
 }
 
 section#controller {
